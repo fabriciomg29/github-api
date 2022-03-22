@@ -1,12 +1,16 @@
 import React from 'react';
+import useGithub from '../../hooks/github-hooks';
+import Header from '../header';
+import * as S from './styled';
 
 const Layout = ({children}) => {
+
   return (
     <div>
-      <section>
-        <header>header</header>
+      <S.WrapperLayout>
+        <Header />
         {children}
-      </section>
+      </S.WrapperLayout>
     </div>
   )
 }
